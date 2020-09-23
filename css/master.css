@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100vw;
+}
+
+/* classi da rimuovere successivamente */
+.h100 {
+  height: 60px;
+}
+
+.h700 {
+  height: 700px;
+}
+
+.h400w400 {
+  height: 400px;
+  width: 400px;
+}
+
+.b1 {
+  border: 1px solid black;
+}
+
+/* fine classi da rimuovere  */
+.f-left {
+  float: left;
+}
+
+header .header-row1 {
+  background-color: #AFEBE4;
+}
+
+header .header-row2 {
+  background-color: white;
+}
+
+main .mrow1 {
+  background-color: #AFEBE4;
+}
+
+.firstpage-container,
+.secodpage-container,
+.thirdpage-container,
+.fourthpage-container,
+footer {
+  padding: 50px 300px;
+}
+
+
+main .firstpage-container {
+  background-color: #FFF2EF;
+}
+
+main .secondpage-container {
+  padding: 50px 300px;
+  background-color: #cecece;
+}
+
+main .secondpage-container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+main .firstpage-contaier .textbox {
+  background-color: white;
+  margin-top: 100px;
+  margin-left: 300px;
+}
+
+main .secondpage-container .firstrow {
+  text-align: center;
+  height: 300px;
+  background-color: lightblue;
+}
+
+main .secondpage-container .firstbox {
+  background-color: white;
+  height: 250px;
+  width: 100%;
+  margin-top: 50px;
+}
+
+main .secondpage-container .secondbox {
+  margin-top: 50px;
+  margin-left: calc(100% / 3 - 420px);
+  background-color: red;
+  height: 600px;
+  width: 350px;
+}
+
+
+main .thirdpage-container {
+  background-color: #01AAB8;
+}
+
+main .thirdpage-container .firstbox {
+  color: white;
+  text-align: center;
+}
+
+main .fourthpage-container {
+  background-color: grey;
+  position:relative;
+}
+
+main .fourthpage-container .firstbox {
+  height: 200px;
+  width: 150px;
+  background-color:white;
+  display: inline-block;
+
+}
+
+main .fourthpage-container .secondbox{
+  width: 650px;
+  height: 200px;
+  background-color: white;
+  display: inline-block;
+  margin-left: 500px;
+}
+
+main .fourthpage-container .thirdbox {
+  width: 450px;
+  height: 350px;
+  background-color: white;
+  margin: 50px 0;
+}
+
+footer {
+  background-color:#2D3E50;
+  height: 700px;
+  color: white;
+  position: relative;
+
+
+}
+footer::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+footer .floatbox.f-left {
+  margin-left: calc(100% / 4 - 300px );
+  width: 250px;
+  height: 300px;
+}
+
+footer .language-box {
+  position: absolute;
+  height: 50px;
+  width: calc(100% - 600px);
+  background-color: red;
+  left:300px;
+  bottom: 150px;
+
+}
+
+footer hr {
+  position: absolute;
+  left: 300px;
+  right: 300px;
+  bottom: 140px;
+  border-color: white;
+  background-color: white;
+  height: 3px;
+
+}
+
+footer .legal-box {
+  position: absolute;
+  bottom: 50px;
+  width: calc(100% - 600px);
+  height: 50px;
+
+}
