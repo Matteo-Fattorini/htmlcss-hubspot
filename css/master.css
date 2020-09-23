@@ -44,21 +44,30 @@ main .mrow1 {
 }
 
 .firstpage-container,
-.secodpage-container,
+.secondpage-container,
 .thirdpage-container,
 .fourthpage-container,
-footer {
-  padding: 50px 300px;
+.footer-container {
+  width: 80%;
+  padding-top: 3%;
+  padding-bottom: 2%;
+  margin: auto;
 }
 
-
-main .firstpage-container {
+main .firstpage-background {
+  width: 100%;
+  height: 700px;
   background-color: #FFF2EF;
 }
 
+main .firstpage-container .textbox {
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
 main .secondpage-container {
-  padding: 50px 300px;
-  background-color: #cecece;
+  width: 80%;
+
 }
 
 main .secondpage-container::after {
@@ -87,15 +96,20 @@ main .secondpage-container .firstbox {
 }
 
 main .secondpage-container .secondbox {
-  margin-top: 50px;
-  margin-left: calc(100% / 3 - 420px);
+  margin-left: 4%;
+  margin-right: 4%;
   background-color: red;
   height: 600px;
-  width: 350px;
+  width: 25%
 }
 
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-main .thirdpage-container {
+main .thirdpage-container-background {
   background-color: #01AAB8;
 }
 
@@ -104,22 +118,23 @@ main .thirdpage-container .firstbox {
   text-align: center;
 }
 
-main .fourthpage-container {
+main .fourthpage-container-background {
   background-color: grey;
-  position:relative;
+
 }
 
 main .fourthpage-container .firstbox {
   height: 200px;
-  width: 150px;
-  background-color:white;
+  width: 250px;
+  margin-left: 50px;
+  background-color: white;
   display: inline-block;
-
 }
 
-main .fourthpage-container .secondbox{
+main .fourthpage-container .secondbox {
   width: 650px;
   height: 200px;
+  margin-left: 50px;
   background-color: white;
   display: inline-block;
   margin-left: 500px;
@@ -129,53 +144,39 @@ main .fourthpage-container .thirdbox {
   width: 450px;
   height: 350px;
   background-color: white;
-  margin: 50px 0;
+  margin: 50px 50px;
 }
 
 footer {
-  background-color:#2D3E50;
+  background-color: #2D3E50;
   height: 700px;
   color: white;
   position: relative;
-
-
 }
-footer::after{
-  content: "";
-  display: table;
-  clear: both;
-}
+
 footer .floatbox.f-left {
-  margin-left: calc(100% / 4 - 300px );
-  width: 250px;
+  margin-left: calc(100% / 3 - 30%);
+  width: 20%;
   height: 300px;
 }
 
 footer .language-box {
-  position: absolute;
   height: 50px;
   width: calc(100% - 600px);
   background-color: red;
-  left:300px;
-  bottom: 150px;
-
+  margin-left: 50%;
+  margin-top: 150px;
+  transform: translate(-50%);
 }
 
 footer hr {
-  position: absolute;
-  left: 300px;
-  right: 300px;
   bottom: 140px;
   border-color: white;
   background-color: white;
   height: 3px;
-
 }
 
 footer .legal-box {
-  position: absolute;
-  bottom: 50px;
-  width: calc(100% - 600px);
-  height: 50px;
-
+  margin-top: 10px;
+  height: 100px;
 }
