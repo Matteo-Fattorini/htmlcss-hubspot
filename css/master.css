@@ -2,13 +2,16 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+a {
+  text-decoration: none;
+  color:inherit;
 }
 
-.container {
-  width: 100vw;
+a:hover {
+  color:red;
 }
-
-/* classi da rimuovere successivamente */
 .h100 {
   height: 60px;
 }
@@ -22,35 +25,104 @@
   width: 400px;
 }
 
+.row-50 {
+  width: 45%;
+  line-height: 33px;
+}
+
 .b1 {
   border: 1px solid black;
 }
 
-/* fine classi da rimuovere  */
+#login, #gethubspotfree {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#login {
+  color: orange;
+  border: 2px solid orange;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+#gethubspotfree {
+  color: white;
+  background-color: orange;
+  border-radius: 3px;
+  padding: 7px;
+}
+
+.centered-middle {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
 .f-left {
   float: left;
 }
 
-header .header-row1 {
-  background-color: #AFEBE4;
+.f-right {
+  float: right;
 }
 
-header .header-row2 {
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav {
+  width: 100%;
+}
+
+header nav .f-right {
+  margin-left: 40px;
+  position:relative;
+  top: 15px;
+}
+
+header .white {
+  width: 100%;
   background-color: white;
+}
+
+header .header-container {
+  position: relative;
+}
+
+header {
+  background-color: #F5F8FA;
+}
+
+header .header-container .row-50 {
+  display: inline-block;
+}
+
+header .header-container .box {
+  margin-right: 100px;
+  margin-left: 10px;
+  padding-top: 5%;
 }
 
 main .mrow1 {
   background-color: #AFEBE4;
 }
 
+header img {
+  height: 60px;
+  vertical-align: middle;
+}
+
 .firstpage-container,
 .secondpage-container,
 .thirdpage-container,
 .fourthpage-container,
-.footer-container {
+.footer-container,
+.header-container {
   width: 80%;
-  padding-top: 3%;
-  padding-bottom: 2%;
+  /* padding-bottom: 2%; */
   margin: auto;
 }
 
@@ -67,7 +139,6 @@ main .firstpage-container .textbox {
 
 main .secondpage-container {
   width: 80%;
-
 }
 
 main .secondpage-container::after {
@@ -111,16 +182,22 @@ main .secondpage-container .secondbox {
 
 main .thirdpage-container-background {
   background-color: #01AAB8;
+  color: white;
 }
 
 main .thirdpage-container .firstbox {
-  color: white;
   text-align: center;
+  margin-bottom: 50px;
+}
+
+main .thirdpage-container .floatbox {
+  border: 1px solid black;
+  width: 25%;
+  height: 250px;
 }
 
 main .fourthpage-container-background {
   background-color: grey;
-
 }
 
 main .fourthpage-container .firstbox {
