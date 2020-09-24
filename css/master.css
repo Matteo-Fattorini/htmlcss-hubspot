@@ -11,8 +11,9 @@ a {
 }
 
 a:hover {
-  color: red;
+  color: blue;
 }
+
 hr {
   background-color: black;
 }
@@ -100,7 +101,6 @@ hr {
 .footer-container,
 .header-container {
   width: 80%;
-  /* padding-bottom: 2%; */
   margin: auto;
 }
 
@@ -229,7 +229,6 @@ main .slice-30 img {
   height: 250px;
 }
 
-
 main .slice-30 .orange-button-big {
   position: relative;
   left: 10%;
@@ -238,10 +237,9 @@ main .slice-30 .orange-button-big {
   line-height: 50px;
 }
 
-main .slice-70 .text-container{
+main .slice-70 .text-container {
   margin-top: 100px;
   line-height: 50px;
-
 }
 
 main .slice-70 .text-container h2,
@@ -256,7 +254,6 @@ main .slice-70 .text-container hr {
 }
 
 main .slice-70 .popolar-feature span {
-
   margin-right: 30px;
   margin-left: 10px;
 }
@@ -264,6 +261,7 @@ main .slice-70 .popolar-feature span {
 main .slice-70 .popolar-feature {
   margin-top: 30px;
 }
+
 main .secondpage-container .secondbox {
   background-color: white;
   padding: 55px;
@@ -274,13 +272,12 @@ main .secondpage-container .secondbox {
   height: 800px;
   width: 25%;
   line-height: 40px;
-
+  position: relative;
 }
 
 main .secondpage-container .secondbox img {
   height: 150px;
 }
-
 
 main .secondbox hr {
   margin-bottom: 40px;
@@ -288,9 +285,17 @@ main .secondbox hr {
 }
 
 main .secondbox .orange-button-big {
-  margin-left: 50px;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
+main .secondbox .fa-check {
+  position: absolute;
+  left: 18%;
+  margin-top: 12px;
+}
 
 main .thirdpage-container-background {
   background-color: #01AAB8;
