@@ -162,11 +162,14 @@ nav {
 
 main .firstpage-background {
   background-color: #FEF4EE;
+  background-image: url("../img/hero.svg");
+  background-size: cover;
+
 }
 
 main .firstpage-container {
-  background-image: url("../img/hero.svg");
-  background-size: cover;
+  /* background-image: url("../img/hero.svg"); */
+  /* background-size: cover; */
   height: 800px;
   padding-top: 40px;
 }
@@ -201,10 +204,11 @@ main .mrow1 {
 
 main .secondpage-container {
   width: 80%;
-  border-top: 4px solid black;
+
 }
 
 main .second-background {
+  border-top: 4px solid black;
   background-color: #F5F8FA;
   width: 100%;
 }
