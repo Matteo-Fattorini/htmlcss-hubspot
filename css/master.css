@@ -14,12 +14,20 @@ a:hover {
   color: blue;
 }
 
+.rounded-border {
+  border-radius: 10px;
+}
+
 hr {
   background-color: black;
 }
 
 ul {
   list-style-type: none;
+}
+
+h1 {
+  font-weight: 700;
 }
 
 .row-50 {
@@ -104,11 +112,16 @@ ul {
 .firstpage-container,
 .secondpage-container,
 .thirdpage-container,
-.fourthpage-container,
+
 .footer-container,
 .header-container {
-  width: 80%;
+  width: 70%;
   margin: auto;
+}
+
+.fourthpage-container {
+  width: 60%;
+  margin:auto;
 }
 
 header .white {
@@ -163,7 +176,10 @@ nav {
 main .firstpage-background {
   background-color: #FEF4EE;
   background-image: url("../img/hero.svg");
-  background-size: cover;
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  position: relative;
 
 }
 
@@ -172,6 +188,7 @@ main .firstpage-container {
   /* background-size: cover; */
   height: 800px;
   padding-top: 40px;
+
 }
 
 main .firstpage-container .textbox {
@@ -196,10 +213,18 @@ main .firstpage-contaier .textbox {
   margin-left: 300px;
 }
 
-main .mrow1 {
-  background-color: #AFEBE4;
-  height: 60px;
-  border: 1px solid black;
+
+
+main .greenrow {
+  position:absolute;
+  bottom: 0;
+  right:0;
+  height: 122px;
+  background-color: #71dbce;
+  width: 100%;
+  border-top: 3px solid darkblue;
+  border-bottom: 3px solid darkblue;
+
 }
 
 main .secondpage-container {
@@ -233,12 +258,13 @@ main .secondpage-container .firstrow p {
 
 main .secondpage-container .firstbox {
   background-color: white;
-  margin-top: 50px;
+  margin: 50px auto;
+  width: 91%;
 }
 
 main .slice-70 {
-  width: 60%;
   position: relative;
+  width: 70%;
 }
 
 main .slice-30 {
@@ -264,13 +290,15 @@ main .slice-70 .text-container {
   line-height: 50px;
 }
 
-main .slice-70 .text-container h2,
-main .slice-70 .text-container hr {
+main .slice-70 .text-container h2 {
   display: inline-block;
 }
 
-main .slice-70 .text-container hr {
-  width: 50%;
+main .slice-70 .text-container .hr-like {
+  vertical-align: middle;
+  display: inline-block;
+  width: 600px;
+  height: 3px;
   background-color: black;
   margin-left: 100px;
 }
@@ -299,11 +327,13 @@ main .secondpage-container .secondbox {
 main .secondpage-container .secondbox img {
   height: 150px;
 }
-
-main .secondbox hr {
+main .secondpage-container .secondbox .dimension {
+  height: 30%;
+  border-bottom: 1px solid black;
   margin-bottom: 40px;
-  margin-top: 40px;
 }
+
+
 
 main .secondbox .orange-button-big {
   position: absolute;
@@ -321,6 +351,7 @@ main .secondbox .popolar-feature {
   text-align: left;
   position: relative;
   left: 50px;
+
 }
 
 main .thirdpage-container-background {
@@ -390,7 +421,7 @@ main .fourthpage-container .firstbox {
   position: absolute;
   line-height: 35px;
   top: 50px;
-  left: 80px;
+
 }
 
 main .fourthpage-container .firstbox h1 {
@@ -463,8 +494,9 @@ footer .floatbox.f-left {
   width: 60%;
   background-color: #cecece;
   color: darkblue;
-  border-radius: 5px;
+  border-radius: 10px;
   margin-bottom: 5px;
+
 }
 
 footer .icons i {
