@@ -40,7 +40,7 @@ hr {
   border: 1px solid black;
 }
 
-#login, #gethubspotfree {
+#login, .gethubspotfree {
   margin-left: 40px;
 }
 
@@ -66,7 +66,7 @@ hr {
   padding: 5px;
 }
 
-#gethubspotfree {
+.gethubspotfree {
   color: white;
   background-color: #FF7A59;
   border-radius: 3px;
@@ -80,6 +80,7 @@ hr {
   width: 200px;
   height: 70px;
   padding: 7px;
+  text-align: center;
   position: relative;
   margin: 40px 0;
 }
@@ -201,6 +202,7 @@ main .mrow1 {
 
 main .secondpage-container {
   width: 80%;
+  border-top: 4px solid black;
 }
 
 main .second-background {
@@ -330,29 +332,29 @@ main .thirdpage-container {
 
 main .thirdpage-container .firstbox {
   text-align: center;
-
 }
 
 main .thirdpage-container .firstbox h1 {
   font-size: 50px;
   padding-left: 50px;
   margin-bottom: 30px;
-
 }
+
 main .thirdpage-container .firstbox p {
   margin-left: 50px;
   font-size: 20px;
   margin-bottom: 100px;
-
 }
+
 main .thirdpage-container .floatbox {
   width: 25%;
   height: 250px;
   text-align: center;
   padding: 20px 0;
-  color:white;
+  color: white;
 }
-.br-white-border{
+
+.br-white-border {
   border-bottom: 1px solid white;
   border-right: 1px solid white;
 }
@@ -369,37 +371,71 @@ main .thirdpage-container .floatbox img {
   height: 30%;
   margin-bottom: 20px;
 }
+
 main .thirdpage-container .floatbox h1 {
   font-size: 60px;
   margin-bottom: 20px;
 }
 
-main .fourthpage-container-background {
-  background-color: grey;
+main .fourthpage-container {
+  margin: 100px 100px;
+  position: relative;
+  height: 800px;
 }
 
 main .fourthpage-container .firstbox {
-  height: 200px;
-  width: 250px;
-  margin-left: 50px;
-  background-color: white;
-  display: inline-block;
+  height: 250px;
+  width: 200px;
+  position: absolute;
+  line-height: 35px;
+  top: 0;
+  left: 80px;
+}
+
+main .fourthpage-container .firstbox h1 {
+  font-size: 50px;
+  margin-bottom: 30px;
+  margin-top: 10px;
 }
 
 main .fourthpage-container .secondbox {
-  width: 650px;
+  width: 1000px;
   height: 200px;
-  margin-left: 50px;
-  background-color: white;
-  display: inline-block;
-  margin-left: 500px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+main .fourthpage-container .secondbox img {
+  height: 80px;
+  width: 200px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+main .fourthpage-container .immagine-persona {
+  position: absolute;
+  bottom: 0;
+  right: 100px;
 }
 
 main .fourthpage-container .thirdbox {
   width: 450px;
   height: 350px;
-  background-color: white;
-  margin: 50px 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  line-height: 30px;
+}
+
+main .fourthpage-container .thirdbox h1,
+main .fourthpage-container .thirdbox p {
+  margin-bottom: 30px;
+}
+
+main .fourthpage-container .thirdbox p:last-child {
+  font-size: 15px;
+  margin-bottom: 30px;
 }
 
 footer {
