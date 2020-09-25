@@ -22,19 +22,6 @@ ul {
   list-style-type: none;
 }
 
-.h100 {
-  height: 60px;
-}
-
-.h700 {
-  height: 700px;
-}
-
-.h400w400 {
-  height: 400px;
-  width: 400px;
-}
-
 .row-50 {
   width: 45%;
   line-height: 33px;
@@ -132,6 +119,10 @@ header .white {
 
 header .header-container {
   position: relative;
+}
+
+header .header-container.clearfix .row-50 {
+  margin-bottom: 30px;
 }
 
 header {
@@ -448,9 +439,9 @@ main .fourthpage-container .thirdbox p:last-child {
 
 footer {
   background-color: #2D3E50;
-  height: 900px;
   color: white;
   position: relative;
+  padding-bottom: 50px;
 }
 
 footer .floatbox.f-left {
@@ -481,7 +472,7 @@ footer .language-box {
   height: 50px;
   width: calc(100% - 600px);
   margin-left: 50%;
-  margin-top: 150px;
+  margin-top: 10px;
   transform: translate(-50%);
 }
 
@@ -496,7 +487,7 @@ footer hr {
 }
 
 footer .legal-box {
-  margin-top: 40px;
+  margin-top: 30px;
   position: relative;
 }
 
