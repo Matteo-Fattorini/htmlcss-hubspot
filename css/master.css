@@ -18,6 +18,10 @@ hr {
   background-color: black;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .h100 {
   height: 60px;
 }
@@ -96,6 +100,10 @@ hr {
   float: left;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 .f-right {
   float: right;
 }
@@ -168,7 +176,7 @@ main .firstpage-background {
 main .firstpage-container {
   background-image: url("../img/hero.svg");
   background-size: cover;
-  height: 650px;
+  height: 800px;
   padding-top: 40px;
 }
 
@@ -284,8 +292,7 @@ main .slice-70 .popolar-feature {
 main .secondpage-container .secondbox {
   background-color: white;
   padding: 55px;
-  margin-left: 4%;
-  margin-right: 4%;
+  margin: 4%;
   text-align: center;
   margin-top: 20px;
   height: 800px;
@@ -378,9 +385,8 @@ main .thirdpage-container .floatbox h1 {
 }
 
 main .fourthpage-container {
-  margin: 100px 100px;
   position: relative;
-  height: 800px;
+  height: 1000px;
 }
 
 main .fourthpage-container .firstbox {
@@ -388,7 +394,7 @@ main .fourthpage-container .firstbox {
   width: 200px;
   position: absolute;
   line-height: 35px;
-  top: 0;
+  top: 50px;
   left: 80px;
 }
 
@@ -402,7 +408,7 @@ main .fourthpage-container .secondbox {
   width: 1000px;
   height: 200px;
   position: absolute;
-  top: 0;
+  top: 50px;
   right: 0;
 }
 
@@ -415,17 +421,19 @@ main .fourthpage-container .secondbox img {
 
 main .fourthpage-container .immagine-persona {
   position: absolute;
-  bottom: 0;
-  right: 100px;
+  display: inline-block;
+  bottom: 100px;
+  height: 400px;
+  right: 200px;
 }
 
 main .fourthpage-container .thirdbox {
   width: 450px;
   height: 350px;
   position: absolute;
-  bottom: 0;
+  bottom: 150px;
   left: 0;
-  line-height: 30px;
+  line-height: 40px;
 }
 
 main .fourthpage-container .thirdbox h1,
@@ -440,34 +448,63 @@ main .fourthpage-container .thirdbox p:last-child {
 
 footer {
   background-color: #2D3E50;
-  height: 700px;
+  height: 900px;
   color: white;
   position: relative;
 }
 
 footer .floatbox.f-left {
+  margin-top: 50px;
   margin-left: calc(100% / 3 - 30%);
   width: 20%;
-  height: 300px;
+  height: 400px;
+  line-height: 40px;
+}
+
+#contacthubspot {
+  margin-top: 5px;
+  text-align: center;
+  height: 40px;
+  width: 60%;
+  background-color: #cecece;
+  color: darkblue;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+footer .icons i {
+  margin-right: 25px;
 }
 
 footer .language-box {
+  text-align: center;
   height: 50px;
   width: calc(100% - 600px);
-  background-color: red;
   margin-left: 50%;
   margin-top: 150px;
   transform: translate(-50%);
+}
+
+footer .language-box span {
+  margin-right: 50px;
 }
 
 footer hr {
   bottom: 140px;
   border-color: white;
   background-color: white;
-  height: 3px;
 }
 
 footer .legal-box {
+  margin-top: 40px;
+  position: relative;
+}
+
+footer .legal-box p {
   margin-top: 10px;
-  height: 100px;
+}
+
+footer .legal-box a {
+  margin-right: 40px;
+  float: right;
 }
