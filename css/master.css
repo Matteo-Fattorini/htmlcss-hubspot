@@ -45,26 +45,37 @@ hr {
 }
 
 .fa-search {
+  margin-top: 5px;
+}
+
+.fa-check {
+  padding: 4px;
+  text-align: center;
   margin-top: 6px;
+  background-color: #FF7A59;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  vertical-align: middle;
 }
 
 #login {
-  color: orange;
-  border: 2px solid orange;
+  color: #FF7A59;
+  border: 2px solid #FF7A59;
   border-radius: 3px;
   padding: 5px;
 }
 
 #gethubspotfree {
   color: white;
-  background-color: orange;
+  background-color: #FF7A59;
   border-radius: 3px;
   padding: 7px;
 }
 
 .orange-button-big {
   color: white;
-  background-color: orange;
+  background-color: #FF7A59;
   border-radius: 3px;
   width: 200px;
   height: 70px;
@@ -122,8 +133,14 @@ header .header-container .row-50 {
   display: inline-block;
 }
 
+header .hr {
+  border-left: 1px solid #000;
+  height: 15px;
+  margin-left: 50px;
+}
+
 header .header-container .box {
-  margin-right: 100px;
+  margin-right: 50px;
   margin-left: 10px;
   padding-top: 5%;
 }
@@ -292,9 +309,14 @@ main .secondbox .orange-button-big {
 }
 
 main .secondbox .fa-check {
-  position: absolute;
-  left: 18%;
-  margin-top: 12px;
+  margin-right: 30px;
+  margin-top: 5px;
+}
+
+main .secondbox .popolar-feature {
+  text-align: left;
+  position: relative;
+  left: 50px;
 }
 
 main .thirdpage-container-background {
@@ -302,15 +324,54 @@ main .thirdpage-container-background {
   color: white;
 }
 
-main .thirdpage-container .firstbox {
-  text-align: center;
-  margin-bottom: 50px;
+main .thirdpage-container {
+  padding: 75px 0 150px 0;
 }
 
+main .thirdpage-container .firstbox {
+  text-align: center;
+
+}
+
+main .thirdpage-container .firstbox h1 {
+  font-size: 50px;
+  padding-left: 50px;
+  margin-bottom: 30px;
+
+}
+main .thirdpage-container .firstbox p {
+  margin-left: 50px;
+  font-size: 20px;
+  margin-bottom: 100px;
+
+}
 main .thirdpage-container .floatbox {
-  border: 1px solid black;
   width: 25%;
   height: 250px;
+  text-align: center;
+  padding: 20px 0;
+  color:white;
+}
+.br-white-border{
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+}
+
+.b-white-border {
+  border-bottom: 1px solid white;
+}
+
+.r-white-border {
+  border-right: 1px solid white;
+}
+
+main .thirdpage-container .floatbox img {
+  height: 30%;
+  margin-bottom: 20px;
+}
+main .thirdpage-container .floatbox h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
 }
 
 main .fourthpage-container-background {
