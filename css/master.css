@@ -451,16 +451,16 @@ main .fourthpage-container .firstbox h1 {
 
 main .fourthpage-container .secondbox {
   width: 800px;
-  height: 200px;
+
   position: absolute;
   top: 50px;
   right: 0;
 }
 
 main .fourthpage-container .secondbox img {
-  height: 80px;
+  height: 100px;
   width: 170px;
-  margin-right: 10px;
+  margin-right: 20px;
   margin-bottom: 10px;
 }
 
