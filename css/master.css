@@ -64,6 +64,9 @@ h1 {
   padding: 5px;
 }
 
+.box-shadow {
+  box-shadow: 1px 1px 4px grey;
+}
 .gethubspotfree {
   color: white;
   background-color: #FF7A59;
