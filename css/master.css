@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -33,24 +33,23 @@ h1 {
 .row-50 {
   width: 45%;
   height: 100%;
-  position:relative;
+  position: relative;
 }
 
 .b1 {
   border: 1px solid black;
 }
 
-#login, .gethubspotfree {
+#login,
+.gethubspotfree {
   margin-left: 40px;
 }
-
-
 
 .fa-check {
   padding: 4px;
   text-align: center;
   margin-top: 6px;
-  background-color: #FF7A59;
+  background-color: #ff7a59;
   height: 25px;
   width: 25px;
   border-radius: 50%;
@@ -58,8 +57,8 @@ h1 {
 }
 
 #login {
-  color: #FF7A59;
-  border: 2px solid #FF7A59;
+  color: #ff7a59;
+  border: 2px solid #ff7a59;
   border-radius: 3px;
   padding: 5px;
 }
@@ -69,14 +68,14 @@ h1 {
 }
 .gethubspotfree {
   color: white;
-  background-color: #FF7A59;
+  background-color: #ff7a59;
   border-radius: 3px;
   padding: 7px;
 }
 
 .orange-button-big {
   color: white;
-  background-color: #FF7A59;
+  background-color: #ff7a59;
   border-radius: 3px;
   width: 200px;
   height: 70px;
@@ -85,7 +84,6 @@ h1 {
   position: relative;
   margin: 40px 0;
 }
-
 
 .centered-middle {
   position: absolute;
@@ -155,12 +153,11 @@ header .header-container {
 }
 
 header .row-50 .special-centering {
-  position:absolute;
-  top:50%;
-  right:0;
+  position: absolute;
+  top: 50%;
+  right: 0;
   transform: translate(0, -30%);
 }
-
 
 header .header-container img {
   height: 100%;
@@ -168,16 +165,14 @@ header .header-container img {
   left: 0;
   top: 50%;
   transform: translate(0, -50%);
-
 }
 header .row-2 .centered-right {
   height: 50px;
 }
 
 header {
-  background-color: #F5F8FA;
+  background-color: #f5f8fa;
 }
-
 
 header .header-container .row-50 {
   display: inline-block;
@@ -186,7 +181,6 @@ header .header-container .row-50 {
 header .hr {
   border-left: 1px solid #000;
   height: 15px;
-
 }
 
 header .header-container .box {
@@ -215,7 +209,7 @@ nav {
 }
 
 main .firstpage-background {
-  background-color: #FEF4EE;
+  background-color: #fef4ee;
   background-image: url("../img/hero.svg");
   background-size: contain;
   background-position: right;
@@ -230,7 +224,6 @@ main .firstpage-container {
 
 main .firstpage-container .textbox {
   width: 550px;
-
 }
 
 main .firstpage-container .textbox h1 {
@@ -244,7 +237,6 @@ main .firstpage-container .textbox p {
 main .firstpage-container .textbox p:last-child {
   font-size: 15px;
 }
-
 
 main .greenrow {
   position: absolute;
@@ -263,7 +255,7 @@ main .secondpage-container {
 
 main .second-background {
   border-top: 4px solid black;
-  background-color: #F5F8FA;
+  background-color: #f5f8fa;
   width: 100%;
 }
 
@@ -272,8 +264,9 @@ main .secondpage-container .firstrow {
 }
 
 main .secondpage-container .firstrow img {
-  height: 200px;
-  margin-bottom: 10px;
+  height: 150px;
+  margin-top: 100px;
+  margin-bottom: 20px;
 }
 
 main .secondpage-container .firstrow p {
@@ -382,7 +375,7 @@ main .secondbox .popolar-feature {
 }
 
 main .thirdpage-container-background {
-  background-color: #01AAB8;
+  background-color: #01aab8;
   color: white;
 }
 
@@ -457,7 +450,7 @@ main .fourthpage-container .firstbox h1 {
 }
 
 main .fourthpage-container .secondbox {
-  width: 1000px;
+  width: 800px;
   height: 200px;
   position: absolute;
   top: 50px;
@@ -466,7 +459,7 @@ main .fourthpage-container .secondbox {
 
 main .fourthpage-container .secondbox img {
   height: 80px;
-  width: 200px;
+  width: 170px;
   margin-right: 10px;
   margin-bottom: 10px;
 }
@@ -498,7 +491,7 @@ main .fourthpage-container .thirdbox p:last-child {
 }
 
 footer {
-  background-color: #2D3E50;
+  background-color: #2d3e50;
   color: white;
   position: relative;
   padding-bottom: 50px;
@@ -516,7 +509,7 @@ footer .floatbox.f-left {
   margin-top: 5px;
   text-align: center;
   height: 40px;
-  width: 60%;
+  width: 70%;
   background-color: #cecece;
   color: darkblue;
   border-radius: 10px;
@@ -559,8 +552,5 @@ footer .legal-box a {
   margin-right: 40px;
   float: right;
 }
-
-
-
 
 /* debug */
