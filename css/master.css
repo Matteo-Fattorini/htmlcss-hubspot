@@ -32,7 +32,8 @@ h1 {
 
 .row-50 {
   width: 45%;
-  line-height: 33px;
+  height: 100%;
+  position:relative;
 }
 
 .b1 {
@@ -43,9 +44,7 @@ h1 {
   margin-left: 40px;
 }
 
-.fa-search {
-  margin-top: 5px;
-}
+
 
 .fa-check {
   padding: 4px;
@@ -84,11 +83,24 @@ h1 {
   margin: 40px 0;
 }
 
+
 .centered-middle {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.centered-left {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(0, -50%);
+}
+.centered-right {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(0, -50%);
 }
 
 .f-left {
@@ -112,7 +124,6 @@ h1 {
 .firstpage-container,
 .secondpage-container,
 .thirdpage-container,
-
 .footer-container,
 .header-container {
   width: 70%;
@@ -121,7 +132,7 @@ h1 {
 
 .fourthpage-container {
   width: 60%;
-  margin:auto;
+  margin: auto;
 }
 
 header .white {
@@ -130,17 +141,40 @@ header .white {
   border-top: 1px solid black;
 }
 
+header .hr {
+  border-left: 1px solid #000;
+  height: 15px;
+  margin-left: 50px;
+}
 header .header-container {
   position: relative;
+  height: 77px;
 }
 
-header .header-container.clearfix .row-50 {
-  margin-bottom: 30px;
+header .row-50 .special-centering {
+  position:absolute;
+  top:50%;
+  right:0;
+  transform: translate(0, -30%);
+}
+
+
+header .header-container img {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+
+}
+header .row-2 .centered-right {
+  height: 50px;
 }
 
 header {
   background-color: #F5F8FA;
 }
+
 
 header .header-container .row-50 {
   display: inline-block;
@@ -149,13 +183,17 @@ header .header-container .row-50 {
 header .hr {
   border-left: 1px solid #000;
   height: 15px;
-  margin-left: 50px;
+
 }
 
 header .header-container .box {
   margin-right: 50px;
   margin-left: 10px;
   padding-top: 5%;
+}
+
+header .white {
+  height: 77px;
 }
 
 header img {
@@ -180,19 +218,16 @@ main .firstpage-background {
   background-position: right;
   background-repeat: no-repeat;
   position: relative;
-
 }
 
 main .firstpage-container {
-  /* background-image: url("../img/hero.svg"); */
-  /* background-size: cover; */
   height: 800px;
   padding-top: 40px;
-
 }
 
 main .firstpage-container .textbox {
   width: 550px;
+
 }
 
 main .firstpage-container .textbox h1 {
@@ -207,29 +242,20 @@ main .firstpage-container .textbox p:last-child {
   font-size: 15px;
 }
 
-main .firstpage-contaier .textbox {
-  background-color: white;
-  margin-top: 100px;
-  margin-left: 300px;
-}
-
-
 
 main .greenrow {
-  position:absolute;
+  position: absolute;
   bottom: 0;
-  right:0;
+  right: 0;
   height: 122px;
   background-color: #71dbce;
   width: 100%;
   border-top: 3px solid darkblue;
   border-bottom: 3px solid darkblue;
-
 }
 
 main .secondpage-container {
   width: 80%;
-
 }
 
 main .second-background {
@@ -327,13 +353,12 @@ main .secondpage-container .secondbox {
 main .secondpage-container .secondbox img {
   height: 150px;
 }
+
 main .secondpage-container .secondbox .dimension {
   height: 30%;
   border-bottom: 1px solid black;
   margin-bottom: 40px;
 }
-
-
 
 main .secondbox .orange-button-big {
   position: absolute;
@@ -351,7 +376,6 @@ main .secondbox .popolar-feature {
   text-align: left;
   position: relative;
   left: 50px;
-
 }
 
 main .thirdpage-container-background {
@@ -421,7 +445,6 @@ main .fourthpage-container .firstbox {
   position: absolute;
   line-height: 35px;
   top: 50px;
-
 }
 
 main .fourthpage-container .firstbox h1 {
@@ -455,9 +478,8 @@ main .fourthpage-container .immagine-persona {
 
 main .fourthpage-container .thirdbox {
   width: 450px;
-  height: 350px;
   position: absolute;
-  bottom: 150px;
+  bottom: 100px;
   left: 0;
   line-height: 40px;
 }
@@ -496,7 +518,6 @@ footer .floatbox.f-left {
   color: darkblue;
   border-radius: 10px;
   margin-bottom: 5px;
-
 }
 
 footer .icons i {
@@ -535,3 +556,8 @@ footer .legal-box a {
   margin-right: 40px;
   float: right;
 }
+
+
+
+
+/* debug */
